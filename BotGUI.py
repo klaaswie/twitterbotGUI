@@ -30,7 +30,7 @@ class MyListener(StreamListener):
 		title='Twitter bot alert!',
 		message=f'{status.user.name} tweeted!',
 		app_name='finalbot.py',
-		app_icon='C:/Users/klaas/Desktop/TwitterBot/BotProject/logo.' + ('ico' if platform == 'win' else 'png')
+		app_icon='logo.' + ('ico' if platform == 'win' else 'png')
 		)
 
 	def on_error(self, status_code):
@@ -41,7 +41,7 @@ class MyListener(StreamListener):
 		title='Twitter bot alert!',
 		message='Error, please check the program and restart manually',
 		app_name='finalbot.py',
-		app_icon='C:/Users/klaas/Desktop/TwitterBot/BotProject/logo.' + ('ico' if platform == 'win' else 'png')
+		app_icon='logo.' + ('ico' if platform == 'win' else 'png')
 		)
 		
 		if status_code == 420:
